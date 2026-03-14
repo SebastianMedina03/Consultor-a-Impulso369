@@ -1,0 +1,61 @@
+/**
+ * ARCHIVO PRINCIPAL DE CSS
+ * Importa todos los estilos modulares en orden correcto
+ * Estructura: Base -> Componentes -> Layout -> Utilidades
+ */
+
+/* ===== BASE STYLES ===== */
+@import url('base/variables.css');
+@import url('base/reset.css');
+@import url('base/typography.css');
+
+/* ===== LAYOUT ===== */
+@import url('layout/container.css');
+
+/* ===== COMPONENTES ===== */
+@import url('components/button.css');
+@import url('components/card.css');
+@import url('components/navbar.css');
+@import url('components/hero.css');
+@import url('components/footer.css');
+@import url('components/form.css');
+@import url('components/team.css');
+@import url('components/case.css');
+@import url('components/services.css');
+
+/* ===== UTILIDADES ===== */
+@import url('utils/utilities.css');
+@import url('utils/animations.css');
+
+/**
+ * ARCHIVO MAIN.CSS COMPLETADO
+ * 
+ * Estructura de archivos CSS:
+ * 
+ * css/
+ * ├── main.css (Este archivo - IMPORTS)
+ * ├── base/
+ * │   ├── variables.css (Variables globales)
+ * │   ├── reset.css (Normalización)
+ * │   └── typography.css (Estilos de texto)
+ * ├── layout/
+ * │   └── container.css (Grid y layouts)
+ * ├── components/
+ * │   ├── button.css (Botones)
+ * │   ├── card.css (Tarjetas)
+ * │   ├── navbar.css (Navegación)
+ * │   ├── hero.css (Secciones hero)
+ * │   ├── footer.css (Footer)
+ * │   └── form.css (Formularios)
+ * └── utils/
+ *     ├── utilities.css (Clases útiles)
+ *     └── animations.css (Animaciones)
+ * 
+ * VENTAJAS:
+ * - Escalable y mantenible
+ * - Separación de responsabilidades
+ * - Fácil de encontrar componentes
+ * - Modularidad completa
+ * - BEM Methodology
+ * - Variables CSS centralizadas
+ */

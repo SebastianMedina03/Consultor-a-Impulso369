@@ -1,0 +1,152 @@
+/**
+ * VARIABLES CSS CENTRALIZADAS
+ * Paleta de colores, tipografía y espaciados
+ * Metodología: Nomenclatura clara y escalable
+ */
+
+:root {
+    /* ===== PALETA DE COLORES MEJORADA ===== */
+    
+    /* Colores Primarios - Blues profesionales */
+    --color-primary: #0f2744;          /* Azul oscuro profesional */
+    --color-primary-dark: #051a2f;     /* Azul muy oscuro */
+    --color-primary-light: #1a4d7a;    /* Azul medio */
+    --color-primary-lighter: #2d6ba3;  /* Azul claro */
+    
+    /* Colores Secundarios - Complementario */
+    --color-secondary: #2d6ba3;        /* Azul complementario */
+    --color-secondary-dark: #1a4d7a;
+    --color-secondary-light: #4a8fc7;
+    
+    /* Colores de Acento - Dorado profesional */
+    --color-accent: #e8a61f;           /* Dorado más saturado */
+    --color-accent-dark: #c67c1a;      /* Dorado oscuro */
+    --color-accent-light: #f5c94a;     /* Dorado claro */
+    
+    /* Escala de Grises - Mejorada para contraste */
+    --color-white: #ffffff;            /* Blanco puro */
+    --color-light: #f7f9fc;            /* Blanco con azul muy tenue */
+    --color-light-gray: #e5e9f0;       /* Gris claro */
+    --color-gray: #3f4f5f;             /* Gris medio (mejorado contraste) */
+    --color-gray-dark: #2d3e4e;        /* Gris oscuro (mejorado contraste) */
+    --color-dark: #1a2332;             /* Gris muy oscuro */
+    --color-darker: #0f1419;           /* Negro casi puro */
+    
+    /* Colores Semánticos */
+    --color-success: #28a745;
+    --color-error: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #17a2b8;
+    
+    /* ===== TIPOGRAFÍA ===== */
+    
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'Courier New', monospace;
+    
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;        /* 16px */
+    --font-size-lg: 1.125rem;      /* 18px */
+    --font-size-xl: 1.5rem;        /* 24px */
+    --font-size-2xl: 2rem;         /* 32px */
+    --font-size-3xl: 2.5rem;       /* 40px */
+    --font-size-4xl: 3rem;         /* 48px */
+    
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.8;
+    
+    /* ===== ESPACIADOS ===== */
+    
+    --spacing-0: 0;
+    --spacing-xs: 0.25rem;  /* 4px */
+    --spacing-sm: 0.5rem;   /* 8px */
+    --spacing-md: 1rem;     /* 16px */
+    --spacing-lg: 1.5rem;   /* 24px */
+    --spacing-xl: 2rem;     /* 32px */
+    --spacing-2xl: 3rem;    /* 48px */
+    --spacing-3xl: 4rem;    /* 64px */
+    --spacing-4xl: 5rem;    /* 80px */
+    --spacing-5xl: 6rem;    /* 96px */
+    
+    /* ===== BORDES Y RADIOS ===== */
+    
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-full: 9999px;
+    
+    --border-width-thin: 1px;
+    --border-width-normal: 2px;
+    --border-width-thick: 3px;
+    
+    /* ===== SOMBRAS ===== */
+    
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 15px 30px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.25);
+    
+    /* ===== TRANSICIONES ===== */
+    
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+    --transition-slower: 700ms ease;
+    
+    --transition-property: all;
+    
+    /* ===== CONTENEDOR ===== */
+    
+    --max-width: 1200px;
+    --max-width-lg: 1440px;
+    --max-width-md: 1024px;
+    --max-width-sm: 768px;
+    
+    /* ===== BREAKPOINTS (Mobile First) ===== */
+    
+    --breakpoint-sm: 576px;   /* Small devices */
+    --breakpoint-md: 768px;   /* Tablets */
+    --breakpoint-lg: 992px;   /* Laptops */
+    --breakpoint-xl: 1200px;  /* Desktops */
+    --breakpoint-2xl: 1400px; /* Large desktops */
+    
+    /* ===== Z-INDEX SCALE ===== */
+    
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+    
+    /* ===== DURACIÓN DE ANIMACIONES ===== */
+    
+    --animation-duration-fast: 0.2s;
+    --animation-duration-normal: 0.3s;
+    --animation-duration-slow: 0.5s;
+}
+
+/* ===== MODO OSCURO (OPCIONAL) ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-white: #1a1a1a;
+        --color-light: #2d2d2d;
+        --color-light-gray: #404040;
+        --color-gray: #a0a0a0;
+        --color-gray-dark: #d0d0d0;
+        --color-dark: #f0f0f0;
+        --color-darker: #ffffff;
+    }
+}

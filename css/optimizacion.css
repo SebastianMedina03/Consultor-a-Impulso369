@@ -1,0 +1,125 @@
+/* Optimizaciones y mejoras adicionales */
+
+/* Mejoras de rendimiento */
+* {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimizaciones para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Clases de utilidad */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Mejoras de accesibilidad */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 10001;
+    text-decoration: none;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Mejoras para impresión */
+@media print {
+    .header,
+    .footer,
+    .contact-cta,
+    .team-join,
+    .success-cta {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    .btn {
+        display: none;
+    }
+}
+
+/* Mejoras para modo oscuro (opcional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #1a1a1a;
+        --dark-color: #f8f9fa;
+        --light-gray: #2d2d2d;
+        --gray-color: #b0b0b0;
+    }
+    
+    body {
+        background-color: #121212;
+        color: var(--dark-color);
+    }
+    
+    .service-card,
+    .testimonial-card,
+    .plan-card,
+    .leadership-card,
+    .consultant-card,
+    .value-card,
+    .case-card,
+    .case-item,
+    .testimonial-content {
+        background-color: #2d2d2d;
+        color: var(--dark-color);
+    }
+    
+    .form-input {
+        background-color: #2d2d2d;
+        color: var(--dark-color);
+        border-color: #444;
+    }
+}
+
+/* Animaciones optimizadas */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impulso 369 - Soluciones empresariales estratégicas para el crecimiento sostenible">
+    <meta name="keywords" content="consultoría, estrategia empresarial, transformación digital">
+    <title>Impulso 369 | Soluciones Empresariales</title>
+    
+    <!-- CSS Orden correcto: Main importa todo -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="navbar__logo">
+                    <div class="navbar__logo-text">Impulso 369</div>
+                </a>
+                <button class="navbar__menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li class="navbar__item"><a href="index.html" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="pages/servicio.html" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="pages/equipo.html" class="navbar__link">Equipo</a></li>
+                    <li class="navbar__item"><a href="pages/casosdeexito.html" class="navbar__link">Casos de Éxito</a></li>
+                    <li class="navbar__item"><a href="pages/contacto.html" class="navbar__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar__backdrop" id="nav-backdrop" aria-hidden="true"></div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(15, 39, 68, 0.7), rgba(45, 107, 163, 0.7)), url('assets/images/hero/hero-logo-marca.png') center/cover no-repeat;">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Soluciones de Consultoría para tu Empresa</h1>
+                <p class="hero__subtitle">Ayudamos a empresas a alcanzar sus objetivos estratégicos con soluciones innovadoras y personalizadas.</p>
+                <div class="hero__buttons">
+                    <a href="pages/servicio.html" class="btn btn--primary">Nuestros Servicios</a>
+                    <a href="pages/contacto.html" class="btn btn--secondary">Contactar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Ofrecemos soluciones integrales adaptadas a las necesidades de cada cliente.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card card--with-icon card--with-image" data-observe>
+                    <div class="card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="card__title">Consultoría Estratégica</h3>
+                    <p class="card__text">Desarrollamos estrategias personalizadas para el crecimiento sostenible de tu empresa.</p>
+                </div>
+                
+                <div class="card card--with-icon card--with-image" data-observe>
+                    <div class="card__icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="card__title">Optimización de Procesos</h3>
+                    <p class="card__text">Identificamos ineficiencias y optimizamos tus procesos para aumentar la productividad.</p>
+                </div>
+                
+                <div class="card card--with-icon card--with-image" data-observe>
+                    <div class="card__icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="card__title">Transformación Digital</h3>
+                    <p class="card__text">Te acompañamos en la implementación de tecnologías para la transformación digital.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="pages/servicio.html" class="btn btn--outline">Ver Todos los Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="section section--light">
+        <div class="container">
+            <div class="grid grid--2col">
+                <div>
+                    <h2>Sobre Impulso 369</h2>
+                    <p>Somos un equipo de consultores en Impulso 369 con más de 15 años de experiencia ayudando a empresas de todos los tamaños a alcanzar sus objetivos de negocio.</p>
+                    <p>Nuestro enfoque se basa en entender profundamente las necesidades de cada cliente para ofrecer soluciones prácticas y efectivas.</p>
+                    
+                    <ul style="list-style: none; margin-top: var(--spacing-xl);">
+                        <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check-circle" style="color: var(--color-success); margin-right: var(--spacing-md);"></i> Más de 200 proyectos exitosos</li>
+                        <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check-circle" style="color: var(--color-success); margin-right: var(--spacing-md);"></i> Equipo multidisciplinario</li>
+                        <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check-circle" style="color: var(--color-success); margin-right: var(--spacing-md);"></i> Resultados medibles</li>
+                        <li><i class="fas fa-check-circle" style="color: var(--color-success); margin-right: var(--spacing-md);"></i> Enfoque personalizado</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="assets/images/hero/hero-principal.png" alt="Impulso 369 - Equipo de trabajo" style="width: 100%; height: auto; border-radius: var(--border-radius);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="text-center">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p class="section-subtitle">Testimonios de empresas que han confiado en nosotros</p>
+            </div>
+            
+            <div class="grid grid--2col mt-5" style="margin-top: var(--spacing-3xl);">
+                <div class="card card--testimonial card--with-image" data-observe>
+                    <div class="card__image-wrapper">
+                        <img src="assets/images/testimonios/testimonio-cliente-1.png" alt="Testimonio cliente 1" class="card__image" loading="lazy" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <p class="card__quote">"Gracias a Impulso 369, nuestra empresa logró aumentar sus ingresos en un 40% en solo 12 meses."</p>
+                    <p class="card__author">María González</p>
+                    <p class="card__author-title">CEO, Innovatech Solutions</p>
+                </div>
+                
+                <div class="card card--testimonial card--with-image" data-observe>
+                    <div class="card__image-wrapper">
+                        <img src="assets/images/testimonios/testimonio-cliente-2.png" alt="Testimonio cliente 2" class="card__image" loading="lazy" style="width: 100%; height: 300px; object-fit: cover;">
+                    </div>
+                    <p class="card__quote">"El proceso de transformación digital con Impulso 369 fue impecable. Nos guiaron en cada paso y los resultados superaron nuestras expectativas."</p>
+                    <p class="card__author">Carlos Ruiz</p>
+                    <p class="card__author-title">Director, RetailPro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--primary">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: white;">¿Listo para transformar tu empresa?</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: var(--spacing-2xl);">Contáctanos hoy mismo para una consulta gratuita</p>
+                <a href="pages/contacto.html" class="btn btn--accent">Solicitar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <a href="index.html" class="footer__logo">
+                        <div class="footer__logo-text">Impulso 369</div>
+                    </a>
+                    <p class="footer__description">Consultoría especializada en soluciones empresariales estratégicas para el crecimiento sostenible.</p>
+                    <div class="footer__social-links">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Enlaces Rápidos</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Inicio</a></li>
+                        <li class="footer__link-item"><a href="pages/servicio.html" class="footer__link">Servicios</a></li>
+                        <li class="footer__link-item"><a href="pages/equipo.html" class="footer__link">Equipo</a></li>
+                        <li class="footer__link-item"><a href="pages/casosdeexito.html" class="footer__link">Casos de Éxito</a></li>
+                        <li class="footer__link-item"><a href="pages/contacto.html" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Servicios</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="pages/servicio.html#estrategia" class="footer__link">Consultoría Estratégica</a></li>
+                        <li class="footer__link-item"><a href="pages/servicio.html#procesos" class="footer__link">Optimización de Procesos</a></li>
+                        <li class="footer__link-item"><a href="pages/servicio.html#digital" class="footer__link">Transformación Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Contacto</h3>
+                    <ul class="footer__contact">
+                        <li class="footer__contact-item">
+                            <span class="footer__contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="footer__contact-text">Calle Principal 123, Madrid, España</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
+                            <span class="footer__contact-text">+34 123 456 789</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="footer__contact-text">info@impulso369.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 Impulso 369. Todos los derechos reservados.</p>
+                <ul class="footer__bottom-links">
+                    <li><a href="#" class="footer__bottom-link">Política de Privacidad</a></li>
+                    <li><a href="#" class="footer__bottom-link">Términos de Servicio</a></li>
+                    <li><a href="#" class="footer__bottom-link">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Impulso 369. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
