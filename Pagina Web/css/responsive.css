@@ -1,0 +1,28 @@
+/* 
+   Este archivo es opcional ya que incluimos 
+   todas las media queries en styles.css
+   Pero lo dejamos por si quieres separarlo
+*/
+
+/* Solo para override específico si necesitas */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-buttons .btn {
+        width: 90%;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

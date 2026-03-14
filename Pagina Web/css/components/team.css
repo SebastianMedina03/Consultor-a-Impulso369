@@ -1,0 +1,283 @@
+/**
+ * COMPONENTE: Team Card (Tarjeta de Equipo)
+ * Descripción: Tarjeta profesional para miembros del equipo con imagen, 
+ * nombre, cargo, descripción y enlaces a redes sociales
+ * 
+ * Estructura BEM:
+ * .team-card {}
+ * .team-card__image-wrapper {}
+ * .team-card__image {}
+ * .team-card__overlay {}
+ * .team-card__social {}
+ * .team-card__social-link {}
+ * .team-card__content {}
+ * .team-card__name {}
+ * .team-card__role {}
+ * .team-card__bio {}
+ */
+
+.team-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Wrapper de imagen con overlay */
+.team-card__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+}
+
+/* Imagen del miembro */
+.team-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-normal);
+    display: block;
+}
+
+.team-card:hover .team-card__image {
+    transform: scale(1.05);
+}
+
+/* Overlay que aparece en hover */
+.team-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 58, 95, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    backdrop-filter: blur(4px);
+}
+
+.team-card:hover .team-card__overlay {
+    opacity: 1;
+}
+
+/* Enlaces sociales en overlay */
+.team-card__social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card__social-link {
+    width: 45px;
+    height: 45px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: var(--transition-normal);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.team-card__social-link:hover {
+    background: var(--color-primary);
+    transform: scale(1.15) rotateY(180deg);
+    border-color: var(--color-accent);
+}
+
+/* Contenido texto */
+.team-card__content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nombre del miembro */
+.team-card__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+    line-height: 1.3;
+}
+
+/* Cargo/posición */
+.team-card__role {
+    color: var(--color-accent);
+    font-weight: 500;
+    margin: 0.25rem 0 0.75rem 0;
+    font-size: 0.95rem;
+}
+
+/* Biografía/descripción */
+.team-card__bio {
+    color: var(--color-gray-dark);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .team-card {
+        border-radius: var(--border-radius-md);
+    }
+
+    .team-card__content {
+        padding: 1.25rem;
+    }
+
+    .team-card__name {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        border-radius: var(--border-radius-md);
+    }
+
+    .team-card__image-wrapper {
+        aspect-ratio: 4 / 3;
+    }
+
+    .team-card__overlay {
+        opacity: 1;
+        background: rgba(26, 58, 95, 0.7);
+    }
+
+    .team-card__social {
+        gap: 1rem;
+    }
+
+    .team-card__social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .team-card__content {
+        padding: 1rem;
+    }
+
+    .team-card__name {
+        font-size: 1rem;
+    }
+
+    .team-card__role {
+        font-size: 0.85rem;
+    }
+
+    .team-card__bio {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-card {
+        border-radius: var(--border-radius-sm);
+    }
+
+    .team-card__image-wrapper {
+        aspect-ratio: 1 / 1;
+    }
+
+    .team-card__content {
+        padding: 0.75rem;
+    }
+
+    .team-card__name {
+        font-size: 0.95rem;
+        margin: 0.25rem 0;
+    }
+
+    .team-card__role {
+        font-size: 0.8rem;
+        margin: 0.1rem 0 0.5rem 0;
+    }
+
+    .team-card__bio {
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    .team-card__social {
+        gap: 0.75rem;
+    }
+
+    .team-card__social-link {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== GALERÍA DE EQUIPO ===== */
+
+.team-gallery {
+    margin-top: var(--spacing-3xl);
+}
+
+.team-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.team-gallery__item {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: var(--color-light);
+}
+
+.team-gallery__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.team-gallery__item:hover .team-gallery__image {
+    transform: scale(1.05);
+}
+
+.team-gallery__caption {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+    background: var(--color-white);
+}
+
+@media (max-width: 992px) {
+    .team-gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .team-gallery__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-gallery__image {
+        height: 200px;
+    }
+}

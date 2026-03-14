@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce nuestro equipo profesional - Impulso 369">
+    <meta name="keywords" content="equipo, consultores, profesionales">
+    <title>Nuestro Equipo | Impulso 369</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="../index.html" class="navbar__logo">
+                    <div class="navbar__logo-text">Impulso 369</div>
+                </a>
+                
+                <!-- Toggle menú móvil -->
+                <button class="navbar__menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Menú de navegación -->
+                <ul class="navbar__menu" id="nav-menu">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__link">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="servicio.html" class="navbar__link">Servicios</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="equipo.html" class="navbar__link navbar__link--active">Equipo</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="casosdeexito.html" class="navbar__link">Casos de Éxito</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contacto.html" class="navbar__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO PEQUEÑO -->
+    <section class="hero hero--small" style="background: linear-gradient(rgba(26, 58, 95, 0.7), rgba(26, 58, 95, 0.7)), url('../assets/images/hero/hero-equipo.jpg') center/cover no-repeat;">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Nuestro Equipo</h1>
+                <p class="hero__subtitle">Profesionales dedicados con años de experiencia en consultoría estratégica</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="section">
+        <div class="container text-center mb-5">
+            <h2 class="section__title">Expertos en Transformación Empresarial</h2>
+            <p class="section__subtitle">
+                Nuestro equipo está compuesto por consultores, strategas y especialistas con más de 15 años 
+                de experiencia en la industria. Nos apasiona ayudar a empresas a alcanzar su máximo potencial.
+            </p>
+        </div>
+    </section>
+
+    <!-- EQUIPO GRID -->
+    <section class="section team-section">
+        <div class="container">
+            <!-- Grid responsivo de equipo -->
+            <div class="grid grid--3col">
+                <!-- Miembro 1 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-1.jpg"
+                            alt="Juan García - CEO"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Juan García</h3>
+                        <p class="team-card__role">CEO & Fundador</p>
+                        <p class="team-card__bio">
+                            +15 años de experiencia en consultoría estratégica para empresas de Fortune 500. 
+                            Especialista en transformación digital y desarrollo de modelos de negocio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-2.jpg"
+                            alt="María López - Directora"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">María López</h3>
+                        <p class="team-card__role">Directora de Proyectos</p>
+                        <p class="team-card__bio">
+                            Experta en transformación digital, procesos empresariales y gestión del cambio. 
+                            Ha liderado +50 proyectos exitosos en diferentes industrias.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-3.jpg"
+                            alt="Carlos Rodríguez - Consultor"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Carlos Rodríguez</h3>
+                        <p class="team-card__role">Consultor Senior</p>
+                        <p class="team-card__bio">
+                            Especializado en optimización de procesos y mejora continua. 
+                            Certificado Six Sigma y metodologías Agile.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-4.jpg"
+                            alt="Ana Martínez - Especialista"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Ana Martínez</h3>
+                        <p class="team-card__role">Especialista en Estrategia</p>
+                        <p class="team-card__bio">
+                            Experta en análisis de mercado y planificación estratégica. 
+                            MBA por universidad internacional con 12 años de experiencia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Miembro 5 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-5.jpg"
+                            alt="Roberto García - Gestor"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Roberto García</h3>
+                        <p class="team-card__role">Gestor de Implementación</p>
+                        <p class="team-card__bio">
+                            Especializado en gestión de proyectos y recursos. 
+                            Certificado PMP con experiencia en multinacionales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="team-card">
+                    <div class="team-card__image-wrapper">
+                        <img 
+                            src="../assets/images/equipo/miembro-6.jpg"
+                            alt="Sofía López - Analista"
+                            class="team-card__image"
+                            loading="lazy"
+                            width="300"
+                            height="300"
+                        >
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#" class="team-card__social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="team-card__social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <h3 class="team-card__name">Sofía López</h3>
+                        <p class="team-card__role">Analista de Datos</p>
+                        <p class="team-card__bio">
+                            Experta en análisis de datos y Business Intelligence. 
+                            Especializada en reportes y dashboards ejecutivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALORES DEL EQUIPO -->
+    <section class="section" style="background: var(--color-light);">
+        <div class="container">
+            <h2 class="section__title text-center mb-5">Nuestros Valores</h2>
+            
+            <div class="grid grid--3col">
+                <div class="card">
+                    <div class="card__icon-wrapper" style="background: linear-gradient(135deg, #1a3a5f, #f0b52d);">
+                        <i class="fas fa-handshake" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 class="card__title">Integridad</h3>
+                    <p class="card__text">
+                        Trabajamos con transparencia y honestidad, priorizando los intereses de nuestros clientes 
+                        en todo momento.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon-wrapper" style="background: linear-gradient(135deg, #f0b52d, #1a3a5f);">
+                        <i class="fas fa-lightbulb" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 class="card__title">Innovación</h3>
+                    <p class="card__text">
+                        Nos mantenemos a la vanguardia de metodologías y tecnologías para ofrecerte 
+                        soluciones modernas y efectivas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon-wrapper" style="background: linear-gradient(135deg, #1a3a5f, #f0b52d);">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: white;"></i>
+                    </div>
+                    <h3 class="card__title">Resultados</h3>
+                    <p class="card__text">
+                        Nuestro compromiso es generar valor medible y sostenible para tu empresa 
+                        a través de soluciones probadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" style="background: linear-gradient(135deg, #1a3a5f, #2a5a8f); color: white;">
+        <div class="container text-center">
+            <h2 class="section__title" style="color: white;">¿Listo para conocernos?</h2>
+            <p class="section__subtitle" style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                Agendar una reunión con nuestro equipo y descubre cómo podemos ayudarte
+            </p>
+            <a href="contacto.html" class="btn btn--primary btn--lg">Agendar Reunión</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Columna 1: Información -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Impulso 369</h3>
+                    <p class="footer__text">
+                        Consultoría empresarial profesional para empresas que quieren crecer y transformarse.
+                    </p>
+                    <div class="footer__social-links">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Enlaces Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicio.html">Servicios</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="casosdeexito.html">Casos de Éxito</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Contacto</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+59123456789">+591 2 345 6789</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@impulso369.com">info@impulso369.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Calle Principal 123, La Paz
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal -->
+                <div class="footer__column">
+                    <h4 class="footer__subtitle">Legal</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Impulso 369. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/config/config.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>
